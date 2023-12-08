@@ -5,7 +5,6 @@ dists = [int(num) for num in input().split()[1:]]
 
 total = 1
 for time, dist in zip(times, dists):
-
     # Use the quadratic formula, with a=1, b=-time, c=dist
     discriminant = math.sqrt(time * time - 4 * dist)
 
