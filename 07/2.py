@@ -91,4 +91,5 @@ with open("in.txt") as file:
         Hand(line.split()[0], int(line.split()[1])) for line in file.read().split("\n")
     ]
 
+    # order by rank multiplier
     print(sum((i + 1) * hand.bid for i, hand in enumerate(sorted(lines))))
