@@ -24,5 +24,3 @@ for hex_code in instructions:
 # every new hash, add 1/2. At the end, add 1 (for the additional 1/4 from each clockwise turn)
 total = (area + total_steps) // 2 + 1
 print(total)
-
-# 
