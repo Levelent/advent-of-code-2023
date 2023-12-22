@@ -78,7 +78,7 @@ for conj in conjunctions:
 iterations = 10000
 pulses_sent: list[int] = [(len(pulse_queue) + 1) * iterations, 0]
 
-# secretly dfs
+# input data is secretly hiding lcm
 
 for i in range(iterations):
     if i % 10000 == 0:
@@ -97,8 +97,3 @@ for i in range(iterations):
         if new_pulse_state != None:
             pulses_sent[new_pulse_state] += len(receiver_module.destinations)
             this_pulse_queue.extend([Pulse(receiver_module.name, d, new_pulse_state) for d in receiver_module.destinations])
-
-# print(modules)
-# print(pulses_sent)
-# print(pulses_sent[0] * pulses_sent[1])
-print(3833 * 4021 * 4051 * 4057)
